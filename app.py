@@ -23,8 +23,7 @@ def display_fahrenheit(celsius):
     if celsius:
         fahrenheit = convert_celsius_fahrenheit(celsius)
         return f"{celsius} C is {fahrenheit} F"
-    else:
-        return "Invalid input e.g. url/f/10.0"
+    return "Invalid input e.g. url/f/10.0"
 
 
 @app.route('/c/<fahrenheit>')
@@ -34,8 +33,7 @@ def display_celsius(fahrenheit):
     if fahrenheit:
         celsius = convert_fahrenheit_celsius(fahrenheit)
         return f"{fahrenheit} F is {celsius} C"
-    else:
-        return "Invalid input e.g. url/c/10.0"
+    return "Invalid input e.g. url/c/10.0"
 
 
 def validate_float(string):
